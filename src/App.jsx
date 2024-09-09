@@ -12,13 +12,21 @@ function App() {
 
   // use effect using for run while loading the page
   useEffect(() => {
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=9.9312&longitude=76.2673&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m')
+    let latitude ;
+    let longitude ;
+    if(city === "Kochi"){
+       latitude = 9.9312;
+       longitude = 76.2673;
+      console.log("its kochi temp")
+    }
+
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m`)
     .then(response => response.json())
     .then(data => {
       console.log(data.current.
         temperature_2m);
         setTemperature (data.current.temperature_2m);
-    })
+    },[city])
     .catch(error => {
       console.log(error);
     })
