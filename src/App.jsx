@@ -12,7 +12,7 @@ function App() {
 
   // use effect using for run while loading the page
   useEffect(() => {
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m')
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=9.9312&longitude=76.2673&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m')
     .then(response => response.json())
     .then(data => {
       console.log(data.current.
