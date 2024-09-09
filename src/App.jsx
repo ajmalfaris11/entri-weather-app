@@ -5,7 +5,7 @@ function App() {
   const [city, setCity] = useState("Kochi");
 
   function changeCity(selectedCity){
-    setCity(selectedCity.target.dataset.city)
+    setCity(selectedCity)
     console.log(city);
   }
 
