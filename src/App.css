@@ -8,11 +8,20 @@
   
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .suggestions {
+  width: 500px;
   gap: 12px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 button {
   padding: 10px 15px;

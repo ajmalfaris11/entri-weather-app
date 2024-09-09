@@ -33,14 +33,26 @@ function App() {
   })
 
   return (
-    <>
+    <div className='container'>
      <h1>Temparature at {city} is {temperature}</h1>
      <div className='suggestions'>
-      <button onClick={() => changeCity("Kochi")}>Kochi</button>
-      <button onClick={() => changeCity("Tiruvanandrum")}>Tiruvanandrum</button>
+      <button onClick={() => changeCity("Thiruvananthapuram")}>Thiruvananthapuram</button>
+      <button onClick={() => changeCity("Kollam")}>Kollam</button>
+      <button onClick={() => changeCity("Pathanamthitta")}>Pathanamthitta</button>
+      <button onClick={() => changeCity("Alappuzha")}>Alappuzha</button>
       <button onClick={() => changeCity("Kottayam")}>Kottayam</button>
+      <button onClick={() => changeCity("Idukki")}>Idukki</button>
+      <button onClick={() => changeCity("Ernakulam")}>Ernakulam</button>
+      <button onClick={() => changeCity("Thrissur")}>Thrissur</button>
+      <button onClick={() => changeCity("Palakkad")}>Palakkad</button>
+      <button onClick={() => changeCity("Malappuram")}>Malappuram</button>
+      <button onClick={() => changeCity("Wayanad")}>Wayanad</button>
+      <button onClick={() => changeCity("Kozhikode")}>Kozhikode</button>
+      <button onClick={() => changeCity("Kannur")}>Kannur</button>
+      <button onClick={() => changeCity("Kasargod")}>Kasargod</button>
+
      </div>
-    </>
+     </div>
   )
 }
 

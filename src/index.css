@@ -8,4 +8,5 @@ body {
   background: #000;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
 }
