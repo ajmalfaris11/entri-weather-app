@@ -1,0 +1,27 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  
+}
+
+.suggestions {
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: medium;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  scale: 1.1;
+}
