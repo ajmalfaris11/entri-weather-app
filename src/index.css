@@ -9,4 +9,7 @@ body {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
+  background-image: url("https://www.datocms-assets.com/101439/1702305484-kochi.jpg?auto=format&fit=max&w=1200");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
